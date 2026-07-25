@@ -13,6 +13,7 @@ Follow these steps to set up the correct Python version and install project depe
 Before installing a Python version via `pyenv`, ensure your system has the required build tools:
 - **Ubuntu/Debian:** `sudo apt update && sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git`
 - **macOS:** `brew install openssl readline sqlite3 xz zlib tcl-tk`
+---
 
 ### 2. Install Python Version
 Install the specified Python version for this project (e.g., `3.12.6`):
@@ -21,7 +22,16 @@ pyenv install 3.12.6
 pyenv local 3.12.6
 ```
 
-### 3. Install Project Requirements
+---
+### 3. Create and activate virtual environment
+Use Python version to create isolated virutal env
+```bash
+pyenv virtualenv 3.12.6 env_pin_pals
+pyenv activate env_pin_pals      
+```
+
+---
+### 4. Install Project Requirements
 Upgrade pip and install the dependencies from your `requirements.txt` file:
 ```bash
 pip install --upgrade pip
@@ -29,14 +39,14 @@ pip install -r requirements.txt
 ```
 
 ---
-
-### 4. Run Djange BE server
+### 5. Run Djange BE server
 django runserver from prokect root
 ```bash
 python manage.py runserver
 ```
 
-### 5. pytest smoke test
+---
+### 6. pytest smoke test
 call pytest deamon to run all scenarios
 ```bash
 pytest
