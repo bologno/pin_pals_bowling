@@ -30,6 +30,20 @@ pip install -r requirements.txt
 
 ---
 
+### 4. Run Djange BE server
+django runserver from prokect root
+```bash
+python manage.py runserver
+```
+
+### 5. pytest smoke test
+call pytest deamon to run all scenarios
+```bash
+pytest
+```
+
+---
+
 ## MIT License
 
 Copyright (c) [Year] [FullName/Organization]
