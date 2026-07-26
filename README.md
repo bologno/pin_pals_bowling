@@ -1,9 +1,7 @@
 # pin_pals_bowling
-Back End service for bowling score game.
-
-# Project Name
-
-A short description of your project.
+Djange Rest Framework Back End service for bowling score game with.
+Pytest Smoke Testing Regression.
+DRF-Spectacular documentation.
 
 ## Requirements Setup with pyenv
 
